@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 
 
@@ -29,7 +30,11 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         btnButton?.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_loginFragment)
+            Bundle().apply {
+                putString("name","name of you ")
+                findNavController().navigate(R.id.action_mainFragment_to_loginFragment,this)
+            }
+
         }
     }
 

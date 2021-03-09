@@ -17,5 +17,10 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.deeplinkproject.LoginFragment"
-        android:label="LoginFragment" />
+        android:label="LoginFragment" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="default value " />
+    </fragment>
 </navigation>
