@@ -18,6 +18,16 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
+        android:id="@+id/btn_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btn_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:textAllCaps="false"
+        android:text="Show Notification " />
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
